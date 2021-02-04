@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { MovieCard } from './MovieCard'
+import { ResultCard } from './ResultCard'
 
 export const Add = () => {
     const [query, setQuery] = useState("");
-    const [movies, setMovies] = useState([]);
+    const [results, setResults] = useState([]);
 
     const onChange = (e) => {
         e.preventDefault();
@@ -16,9 +16,9 @@ export const Add = () => {
             .then((res) => res.json())
             .then((data)=>{
                 if(!data.errors) {
-                    setMovies(data.results);
+                    setResults(data.results);
                 } else {
-                    setMovies("")
+                    setResults("")
                 }
             });
     }
@@ -35,11 +35,11 @@ export const Add = () => {
                         onChange={onChange}
                         />
                     </div>
-                    { movies.length > 0 && (
-                        <ul className="movies">
-                            {movies.map(movie => (
+                    { results.length > 0 && (
+                        <ul className="results">
+                            {results.map(movie => (
                                 <li key={movie.id}>
-                                    <MovieCard movie={movie}/>
+                                    <ResultCard movie={movie}/>
                                 </li>
                             ))}
                         </ul>

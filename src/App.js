@@ -11,24 +11,26 @@ import { GlobalContext, GlobalProvider } from "./context/GlobalState";
 function App() {
   return (
     <GlobalProvider>
-    <Router>
-      <Header/>
-      <Switch>
+      <Router>
+        <Header />
 
-        <Route exact path="/">
-          <Watchlist/>
-        </Route>
+        <Switch>
 
-        <Route path="/watched">
-          <Watched/>
-        </Route>
+          <Route exact path="/">
+            <Watchlist />
+          </Route>
 
-        <Route path="/add">
-          <Add/>
-        </Route>
+          <Route path="/watched">
+            <Watched />
+          </Route>
 
-      </Switch>
-    </Router>
+          <Route path="/add">
+            <Add />
+          </Route>
+          
+        </Switch>
+
+      </Router>
     </GlobalProvider>
   );
 }
