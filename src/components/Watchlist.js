@@ -10,6 +10,7 @@ export const Watchlist = () => {
             <div className="container">
                 <div className="header">
                     <h1 className="heading">My Watchlist</h1>
+                    <span className="count_pill">{watchlist.length} {watchlist.length > 1 ? "movies": "movie"}</span>
                 </div>
 
                 {watchlist.length > 0 ? (
