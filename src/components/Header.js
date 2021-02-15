@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from "../images/logo.png"
+
 
 export const Header = () => {
     return (
@@ -7,20 +9,20 @@ export const Header = () => {
             <div className="container">
                 <div className="inner-content">
                     <div className="brand">
-                        <Link to="/">WatchList</Link>
+                        <Link to="/"><img className="logo" src={logo}/>Moovle</Link>
                     </div>
 
                     <ul className="nav-links">
                         <li>
-                            <Link to="/">Watch List</Link>
+                            <Link to="/">
+                                Movies
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/watchlist">Watch List</Link>
                         </li>
                         <li>
                             <Link to="/watched">Watched</Link>
-                        </li>
-                        <li>
-                            <Link to="/add" className="btn">
-                                +Add
-                            </Link>
                         </li>
                     </ul>
                 </div>

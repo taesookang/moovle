@@ -29,7 +29,7 @@ export const AppReducer = (state, action) => {
         case "REMOVE_FROM_WATCHED":
             return {
                 ...state,
-                watched: state.watchlist.filter((movie) => movie.id !== action.payload)
+                watched: state.watched.filter((movie) => movie.id !== action.payload)
             }
         
         default:

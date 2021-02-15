@@ -1,0 +1,22 @@
+.result-card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    
+    .poster-wrapper {
+        width: 160px;
+
+        img{
+            width: 100%;
+        }
+    }
+    .info {
+        .header {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+        }
+    }
+}

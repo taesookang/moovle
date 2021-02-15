@@ -18,8 +18,8 @@ export const ResultCard = ({movie}) => {
     return (
         <div className="result-card">
             <div className="poster-wrapper">
-                {movie.poster_path ? (
-                    <img src={`http://image.tmdb.org/t/p/w200${movie.poster_path}`} 
+                {movie.poster ? (
+                    <img src={poster} 
                     alt = {`${movie.title} Poster`}
                     />
                 ): (
