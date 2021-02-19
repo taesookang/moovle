@@ -4,10 +4,8 @@ const apiKey = process.env.REACT_APP_TMDB_KEY
 const url = 'https://api.themoviedb.org/3';
 const nowPlayingUrl = `${url}/movie/now_playing`;
 const topratedUrl = `${url}/movie/top_rated`;
-const movieUrl = `${url}/movie`;
 const genreUrl = `${url}/genre/movie/list`;
 const moviesUrl = `${url}/discover/movie`;
-const personUrl = `${url}/trending/person/week`;
 const searchUrl = `${url}/search/movie`;
 const popularUrl = `${url}/movie/popular`;
 
@@ -100,16 +98,6 @@ const fetchPopularMovies = async (page) => {
     }
 }
 
-const fetchMovieVideos = async (id) => {
-    try {
-        const { data } = await axios.get(`${movieUrl}/${id}/videos`, {
-            params: {
-                api_key: apiKey,
-            }
-        });
-        return data.results[0];
-    } catch (err) { return err }
-}
 
 const fetchSearchedMovies = async (query) => {
     try {
