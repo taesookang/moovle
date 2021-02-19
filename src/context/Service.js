@@ -2,8 +2,6 @@ import axios from 'axios';
 
 const apiKey = process.env.REACT_APP_TMDB_KEY
 const url = 'https://api.themoviedb.org/3';
-const posterUrl = 'https://image.tmdb.org/t/p/w200';
-const backdropUrl = 'https://image.tmdb.org/t/p/w780';
 const nowPlayingUrl = `${url}/movie/now_playing`;
 const topratedUrl = `${url}/movie/top_rated`;
 const movieUrl = `${url}/movie`;
@@ -12,8 +10,6 @@ const moviesUrl = `${url}/discover/movie`;
 const personUrl = `${url}/trending/person/week`;
 const searchUrl = `${url}/search/movie`;
 const popularUrl = `${url}/movie/popular`;
-
-// http://image.tmdb.org/t/p/w200/srYya1ZlI97Au4jUYAktDe3avyA.jpg
 
 
 const fetchMovies = async(page) => { 

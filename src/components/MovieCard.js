@@ -5,7 +5,7 @@ import { Modal } from "./Modal"
 import logo from "../images/logo.png"
 
 export const MovieCard = ({ movie, type }) => {
-    const posterUrl = 'http://image.tmdb.org/t/p/w200';
+    const posterUrl = 'https://image.tmdb.org/t/p/w200';
     const poster =  posterUrl + movie.poster_path;
     
     const [popupActive, setPopupActive] = useState(false);
