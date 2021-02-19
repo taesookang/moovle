@@ -70,24 +70,6 @@ const fetchMovieByGenre = async (genre_id, page) => {
     } catch (err) { return err }
 }
 
-const fetchPersons = async () => {
-    try {
-        const { data } = await axios.get(personUrl, {
-            params: {
-                api_key: apiKey
-            }
-        })
-        const persons = data.results.map((person) => ({
-            id: person.id,
-            popularity: person.popularity,
-            name: person.name,
-            profileImg: posterUrl + person.profile_path,
-            known: person.known_for_department
-        }))
-        return persons;
-    } catch (err) { return err }
-}
-
 const fetchTopratedMovie = async (page) => {
     try {
         const { data } = await axios.get(topratedUrl, {
@@ -122,18 +104,6 @@ const fetchPopularMovies = async (page) => {
     }
 }
 
-const fetchMovieDetail = async (id) => {
-    try {
-        const { data } = await axios.get(`${movieUrl}/${id}`, {
-            params: {
-                api_key: apiKey,
-                language: 'en_US'
-            }
-        });
-        return data;
-    } catch (err) { return err }
-}
-
 const fetchMovieVideos = async (id) => {
     try {
         const { data } = await axios.get(`${movieUrl}/${id}/videos`, {
@@ -142,47 +112,6 @@ const fetchMovieVideos = async (id) => {
             }
         });
         return data.results[0];
-    } catch (err) { return err }
-}
-
-const fetchCasts = async (id) => {
-    try {
-        const { data } = await axios.get(`${movieUrl}/${id}/credits`, {
-            params: {
-                api_key: apiKey,
-            }
-        });
-        const casts = data.casts.map((cast) => ({
-            id: cast.cast_id,
-            character: cast.character,
-            name: cast.name,
-            img: posterUrl + cast.profile_path,
-        }))
-
-        return casts;
-    } catch (err) { return err }
-}
-
-const fetchSimilarMovie = async (id) => {
-    try {
-        const { data } = await axios.get(`${movieUrl}/${id}/similar`, {
-            params: {
-                api_key: apiKey,
-                language: 'en_US'
-            }
-        });
-
-        const movies = data.results.map((movie) => ({
-            id: movie.id,
-            backPoster: backdropUrl + movie.backdrop_path,
-            popularity: movie.popularith,
-            title: movie.title,
-            poster: posterUrl + movie.poster_path,
-            overview: movie.overview,
-            rating: movie.vote_average
-        }))
-
-        return movies;
     } catch (err) { return err }
 }
 
@@ -214,12 +143,8 @@ export {
     fetchMovies, 
     fetchGenre,
     fetchMovieByGenre,
-    fetchPersons,
     fetchTopratedMovie,
-    fetchMovieDetail,
     fetchMovieVideos,
-    fetchCasts,
-    fetchSimilarMovie,
     fetchSearchedMovies,
     fetchPopularMovies
 }
