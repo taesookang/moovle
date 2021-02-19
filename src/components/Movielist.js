@@ -23,6 +23,7 @@ export const Movielist = () => {
 
     const onArrowClick = () => {
         setGenreOpen(prev => !prev)
+        setSelectedGenre(null)
         setListByGenre([])
       }
 
