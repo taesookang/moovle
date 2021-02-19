@@ -22,9 +22,7 @@ export const Popular = () => {
         const moreMovies = await fetchPopularMovies(pages);
         setPages(prev => prev + 1)
         setPopular(prev=>[...prev, ...moreMovies])
-  
-        return console.log(moreMovies);
-    }
+      }
 
     return (
       <>

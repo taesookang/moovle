@@ -37,9 +37,6 @@ export const Movielist = () => {
       const moreMovies = await fetchMovieByGenre(genre_id, pagesGenre);
       setPagesGenre(prev => prev + 1);
       setListByGenre(prev => [...prev, ...moreMovies])
-
-      return console.log(moreMovies.map((movie) => (movie.release_date)));
-
     };
 
   return (

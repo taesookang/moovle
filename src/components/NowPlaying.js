@@ -23,8 +23,6 @@ export const NowPlaying = () => {
         const moreMovies = await fetchMovies(pagesNowPlaying);
         setPagesNowPlaying(prev => prev + 1)
         setNowPlaying(prev=>[...prev, ...moreMovies])
-
-        return console.log(moreMovies);
     }
 
     return (

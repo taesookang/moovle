@@ -22,9 +22,7 @@ export const TopRated = () => {
         const moreMovies = await fetchTopratedMovie(pagesToprated);
         setPagesToprated(prev => prev + 1)
         setTopRated(prev=>[...prev, ...moreMovies])
-  
-        return console.log(moreMovies);
-    }
+      }
 
     return (
       <>

@@ -44,5 +44,6 @@
     ]
   },
   "proxy": "http://api.themoviedb.org/3",
-  "homepage": "https://github.com/taesookang/moovle"
+
+  "homepage": "https://taesookang.github.io/moovle"
 }
