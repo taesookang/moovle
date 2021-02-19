@@ -3,60 +3,43 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     .input-wrapper input {
+        flex-direction: row;
+        margin-bottom: 20px;
         width: 100%;
-        max-width: 700px;
         background: rgba(100, 100, 100, 0.1);
         padding: 10px;
         border-radius: 5px;
         border: none;
         color: white;
-        font-size: 1.25rem;
+        font-size: 20px;
     }
 
-    .genres {
-        ul{
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap; 
-            
-            li{
-                margin-left: 10px;
-                margin-bottom: 10px;
-                .genre-btn{
-                    font-size: 14px;
-                    
-                    padding: 10px 20px;
-                    background: $secondary;
-                    color: $text-color;
-                    border: none;
-                    border-radius: 5px;
+    
+    h1.no-results {
+        margin-top: 100px;
+        text-align: center;
+        color: $text-lighter;
+    }
 
-                    &:hover {
-                        color: $primary;
-                        cursor: pointer;
-                    }
+    .lists-wrapper{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
 
-                    &:focus { 
-                        outline: none;
-                        
-                    }
+        .btn-list{
+            margin: 0 5px;
+            font-weight: 600;
+            padding: 10px 10px;
+            font-size: 12px;
+            width: 110px;
 
-                    &.selected {
-                        color: $primary;
-                        border-style: none;
-                    }
-                    
-                }
+            &:hover {
+                color: $primary;
             }
         }
-        
-        
     }
-    
 
-   
-  }
+}
+

@@ -1,7 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef } from 'react'
 import useOutsideClick from "./hooks/useOutsideClick"
 import { fetchMovieVideos } from "../context/Service"
-import { Modal } from './Modal'
+import { Modal } from "./Modal"
+import logo from "../images/logo.png"
 
 export const MovieCard = ({ movie, type }) => {
     const posterUrl = 'http://image.tmdb.org/t/p/w200';
@@ -45,13 +46,14 @@ export const MovieCard = ({ movie, type }) => {
                             alt = {`${movie.title} Poster`}/>
                     ): (
 
-                        <div className="filler-poster"></div>
+                        <div className="filler-poster">
+                            <img src={logo} alt="filler"/>
+                        </div>
                     )}
-
                 </div>
                 <div className="movie-title">
                         <h3>{movie.title}</h3>
-                        <h4>{movie.release_date.substring(0,4)}</h4>
+                        <h4>{movie.release_date ? movie.release_date.substring(0,4) : "-"}</h4>
                 </div>
             </>
         </div>

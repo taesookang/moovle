@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ReactPlayer from 'react-player'
 import { MovieControls } from './MovieControls'
 
@@ -15,12 +15,19 @@ export const Modal = ({popupActive, handleOnPlay, isPlaying, video, movie, type}
                 <div className="modal-video-wrapper">
                     {video ? (<ReactPlayer 
                         className='modal-video' 
-                        controls 
                         url={youtubeUrl + video.key}
                         onPlay={handleOnPlay}
                         playing={isPlaying}
                         width="100%"
                         height="100%"
+                        config={
+                            {youtube: {
+                                playerVars:{
+                                    controls: 1,
+                                    iv_load_policy: 3
+                                }
+                            }}
+                        }
                         ></ReactPlayer>) : ! backdrop.includes("null") ? (
                         <img className="filler-video" src={backdrop} alt=""/>):(
                             <div className="no-video">

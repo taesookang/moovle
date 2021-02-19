@@ -11,17 +11,19 @@ const genreUrl = `${url}/genre/movie/list`;
 const moviesUrl = `${url}/discover/movie`;
 const personUrl = `${url}/trending/person/week`;
 const searchUrl = `${url}/search/movie`;
+const popularUrl = `${url}/movie/popular`;
 
 // http://image.tmdb.org/t/p/w200/srYya1ZlI97Au4jUYAktDe3avyA.jpg
 
 
-const fetchMovies = async () => { 
+const fetchMovies = async(page) => { 
     try {
+        
         const { data } = await axios.get(nowPlayingUrl, {
             params: {
                 api_key: apiKey,
                 language: 'en_US',
-                page: 1
+                page: page
             }
         })
 
@@ -52,13 +54,13 @@ const fetchGenre = async () => {
     } catch (err) { return err } 
 }
 
-const fetchMovieByGenre = async (genre_id) => {
+const fetchMovieByGenre = async (genre_id, page) => {
     try {
         const { data } = await axios.get(moviesUrl, {
             params: {
                 api_key: apiKey,
                 language: 'en_US',
-                page: 1,
+                page: page,
                 with_genres: genre_id
             }
         })
@@ -86,24 +88,33 @@ const fetchPersons = async () => {
     } catch (err) { return err }
 }
 
-const fetchTopratedMovie = async () => {
+const fetchTopratedMovie = async (page) => {
     try {
         const { data } = await axios.get(topratedUrl, {
             params: {
                 api_key: apiKey,
                 language: 'en_US',
-                page: 1
+                page: page
             }
         })
-        const movies = data.results.map((movie) => ({
-            id: movie.id,
-            backPoster: backdropUrl + movie.backdrop_path,
-            popularity: movie.popularith,
-            title: movie.title,
-            poster: posterUrl + movie.poster_path,
-            overview: movie.overview,
-            rating: movie.vote_average
-        }))
+        const movies = data.results;
+
+        return movies;
+    } catch (error) {
+
+    }
+}
+
+const fetchPopularMovies = async (page) => {
+    try {
+        const { data } = await axios.get(popularUrl, {
+            params: {
+                api_key: apiKey,
+                language: 'en_US',
+                page: page
+            }
+        })
+        const movies = data.results;
 
         return movies;
     } catch (error) {
@@ -209,5 +220,6 @@ export {
     fetchMovieVideos,
     fetchCasts,
     fetchSimilarMovie,
-    fetchSearchedMovies
+    fetchSearchedMovies,
+    fetchPopularMovies
 }
