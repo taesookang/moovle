@@ -22,7 +22,6 @@ export const GlobalProvider = props => {
     const [state, dispatch] = useReducer(AppReducer, initialState)
 
     useEffect(() => {
-        console.log('rendered')
         localStorage.setItem('watchlist', JSON.stringify(state.watchlist))
         localStorage.setItem('watched', JSON.stringify(state.watched))
     }, [state])
