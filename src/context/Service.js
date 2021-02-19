@@ -2,8 +2,8 @@ import axios from 'axios';
 
 const apiKey = process.env.REACT_APP_TMDB_KEY
 const url = 'https://api.themoviedb.org/3';
-const posterUrl = 'http://image.tmdb.org/t/p/w200';
-const backdropUrl = 'http://image.tmdb.org/t/p/w780';
+const posterUrl = 'https://image.tmdb.org/t/p/w200';
+const backdropUrl = 'https://image.tmdb.org/t/p/w780';
 const nowPlayingUrl = `${url}/movie/now_playing`;
 const topratedUrl = `${url}/movie/top_rated`;
 const movieUrl = `${url}/movie`;

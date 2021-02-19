@@ -4,7 +4,7 @@ import { MovieControls } from './MovieControls'
 
 export const Modal = ({popupActive, handleOnPlay, isPlaying, video, movie, type}) => {
     const youtubeUrl = "https://www.youtube.com/embed/";
-    const backdropUrl = 'http://image.tmdb.org/t/p/w780'; 
+    const backdropUrl = 'https://image.tmdb.org/t/p/w780'; 
 
     const backdrop = backdropUrl + movie.backdrop_path;
     
