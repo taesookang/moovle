@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/taesookang/moovle/static/css/main.0615a6ed.chunk.css",
+    "main.js": "/taesookang/moovle/static/js/main.c39b2469.chunk.js",
+    "main.js.map": "/taesookang/moovle/static/js/main.c39b2469.chunk.js.map",
+    "runtime-main.js": "/taesookang/moovle/static/js/runtime-main.a41e9450.js",
+    "runtime-main.js.map": "/taesookang/moovle/static/js/runtime-main.a41e9450.js.map",
+    "static/js/2.94294fa3.chunk.js": "/taesookang/moovle/static/js/2.94294fa3.chunk.js",
+    "static/js/2.94294fa3.chunk.js.map": "/taesookang/moovle/static/js/2.94294fa3.chunk.js.map",
+    "static/js/3.5938c690.chunk.js": "/taesookang/moovle/static/js/3.5938c690.chunk.js",
+    "static/js/3.5938c690.chunk.js.map": "/taesookang/moovle/static/js/3.5938c690.chunk.js.map",
+    "index.html": "/taesookang/moovle/index.html",
+    "static/css/main.0615a6ed.chunk.css.map": "/taesookang/moovle/static/css/main.0615a6ed.chunk.css.map",
+    "static/js/2.94294fa3.chunk.js.LICENSE.txt": "/taesookang/moovle/static/js/2.94294fa3.chunk.js.LICENSE.txt",
+    "static/media/all.min.css": "/taesookang/moovle/static/media/fa-solid-900.a940d584.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a41e9450.js",
+    "static/js/2.94294fa3.chunk.js",
+    "static/css/main.0615a6ed.chunk.css",
+    "static/js/main.c39b2469.chunk.js"
+  ]
+}
