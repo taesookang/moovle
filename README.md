@@ -7,7 +7,6 @@ Check out on website :point_right: [Moovle](https://taesookang.github.io/moovle/
 
 :white_check_mark: To build a user-friendly web application which provides movie search and managing watchlist services.
 
-<<<<<<< HEAD
 ## Features
 | Features | Descriptions | Screenshot |
 |--|--|--|
@@ -16,7 +15,7 @@ Check out on website :point_right: [Moovle](https://taesookang.github.io/moovle/
 |Search by genres| Movie search by choosing specific genre.  |<img width="600" alt="moovle-bygenre" src="https://user-images.githubusercontent.com/75271289/108684935-82fc1200-74c1-11eb-8be1-bb96d54532b6.png">|
 |Movie details| Movie details contains movie trailer video, release date information, ratings, synopsis, and control buttons for adding to watchlist or to watched list |<img width="600" alt="moovle-modal" src="https://user-images.githubusercontent.com/75271289/108685248-eb4af380-74c1-11eb-8fc0-e42e79bd718e.png">|
 |Responsive screen| Mobile and tablet viewports are available as well as desktop version. |![moovle-responsive](https://user-images.githubusercontent.com/75271289/108686909-0d457580-74c4-11eb-920b-19a80c206fe8.png)|
-=======
+
 ## Built with
 
 - React JS
