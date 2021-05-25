@@ -44,13 +44,12 @@
                 border-radius: 5px;
 
                 &:hover {
-                    color: $primary;
+                    color: $text-lighter;
                     cursor: pointer;
                 }
 
                 &:focus { 
                     outline: none;
-                    
                 }
 
                 &.selected {

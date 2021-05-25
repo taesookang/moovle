@@ -35,8 +35,15 @@
             font-size: 12px;
             width: 110px;
 
-            &:hover {
+            &.active {
                 color: $primary;
+                &:hover {
+                    color: $primary;
+                }
+            }
+
+            &:hover {
+                color: $text-lighter;
             }
         }
     }

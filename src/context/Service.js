@@ -121,9 +121,6 @@ const fetchSearchedMovies = async (query) => {
             }
         })
 
-        console.log(query)
-
-
         const movies = data.results
 
         return movies;

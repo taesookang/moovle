@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Genrelist, MoviesByGenre } from './Genrelist';
 import { fetchMovieByGenre } from '../context/Service'
 import { NowPlaying } from './NowPlaying';
@@ -8,18 +8,11 @@ import { Popular } from './Popular';
 
 
 export const Movielist = () => {
-
     const [listByGenre, setListByGenre] = useState([]);
     const [listType, setListType] = useState("now-playing");
     const [genreOpen, setGenreOpen] = useState(false);
     const [selectedGenre, setSelectedGenre] = useState(null);
     const [pagesGenre, setPagesGenre] = useState(1);
-
-    const ref = useRef();
-
-    useEffect(() => {
-        ref.current.focus();
-    }, [])
 
     const onArrowClick = () => {
         setGenreOpen(prev => !prev)
@@ -39,6 +32,21 @@ export const Movielist = () => {
       setListByGenre(prev => [...prev, ...moreMovies])
     };
 
+    const list = [
+      {
+        title: "Now Playing",
+        type: "now-playing",
+      },
+      {
+        title: "Top Rated",
+        type: "top-rated"
+      },
+      {
+        title: "Popular",
+        type: "popular"
+      }
+    ]
+
   return (
     <>
       <Genrelist
@@ -57,27 +65,15 @@ export const Movielist = () => {
       ) : (
         <>
           <div className="lists-wrapper">
-            <button
-              className="btn-list"
-              onClick={() => setListType("now-playing")}
-              ref={ref}
+            {list.map((l) => (
+              <button
+              className={`btn-list ${l.type === listType && "active"}`}
+              onClick={() => setListType(l.type)}
+              key={l.type}
             >
-              Now Playing
+              {l.title}
             </button>
-
-            <button
-              className="btn-list"
-              onClick={() => setListType("top-rated")}
-            >
-              Top Rated
-            </button>
-
-            <button
-              className="btn-list"
-              onClick={() => setListType("popular")}
-            >
-              Popular
-            </button>
+            ))}
           </div>
           <ul>
             {listType === "now-playing" ? (

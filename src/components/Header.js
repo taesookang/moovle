@@ -22,7 +22,26 @@ export const Header = () => {
         setMenuActive(false)
     })
 
-
+    const menus = [
+      {
+        title: "Movies",
+        icon: "fas fa-video",
+        count: null,
+        link: "/"
+      },
+      {
+        title: "Watchlist",
+        icon: "fas fa-eye",
+        count: watchlist.length,
+        link: "/watchlist"
+      },
+      {
+        title: "Watched",
+        icon: "fas fa-eye-slash",
+        count: watched.length,
+        link: "/watched"
+      }
+    ]
 
     return (
       <header ref={ref}>
@@ -35,32 +54,17 @@ export const Header = () => {
           </div>
 
           <ul className={`nav-links ${menuActive && "active"}`}>
-            <li>
-              <Link to="/" onClick={()=> setMenuActive(false)}>
+            {menus.map((menu) => (
+              <li key={menu.title}>
+              <Link to={menu.link} onClick={()=> setMenuActive(false)}>
                 <div className="nav-link">
-                  <i className="fas fa-video"></i>
-                  <span>Movies</span>
+                  <i className={menu.icon}></i>
+                  <span>{menu.title}</span>
                 </div>
+                {menu.count !== null && <div className="count">{menu.count}</div>}
               </Link>
             </li>
-            <li>
-              <Link to="/watchlist" onClick={()=> setMenuActive(false)}>
-                <div className="nav-link">
-                  <i className="fas fa-eye"></i>
-                  <span>Watch List</span>
-                </div>
-                <div className="count">{watchlist.length}</div>
-              </Link>
-            </li>
-            <li>
-              <Link to="/watched" onClick={()=> setMenuActive(false)}>
-                <div className="nav-link">
-                  <i className="fas fa-eye-slash"></i>
-                  <span>Watched</span>
-                </div>
-                <div className="count">{watched.length}</div>
-              </Link>
-            </li>
+            ))}
           </ul>
           <i className="fas fa-bars" onClick={onMenuClick}></i>
         </div>
