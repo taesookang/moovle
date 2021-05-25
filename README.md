@@ -65,4 +65,3 @@ Movie details contains movie trailer, release date, ratings, synopsis, and contr
 ![moovle-responsive](https://user-images.githubusercontent.com/75271289/108686909-0d457580-74c4-11eb-920b-19a80c206fe8.png)
 
 Mobile and tablet viewports are available as well as desktop version.
->>>>>>> 36d77ddeed493f7cbea9e4f6af8ff57eeb12e7fd
