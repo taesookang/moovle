@@ -7,3 +7,10 @@ $primary: #f1a93b;
 $secondary: #3a3a3a;
 
 $background: #141414;
+
+
+@mixin va {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

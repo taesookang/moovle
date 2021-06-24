@@ -86,10 +86,10 @@ header {
                 }
 
                 .count {
+                    @include va;
                     margin-top: -10px;
                     margin-left: 5px;
                     padding-top: 1px;
-                    display: block;
                     width: 20px;
                     height: 20px;
                     color: $primary;
@@ -97,7 +97,6 @@ header {
                     border-radius: 10px;
                     font-size: 14px;
                     font-weight: 700;
-                    text-align: center;
                 }
             }
         }
