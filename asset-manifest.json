@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/moovle/static/css/main.bd71a4b8.chunk.css",
-    "main.js": "/moovle/static/js/main.00688929.chunk.js",
-    "main.js.map": "/moovle/static/js/main.00688929.chunk.js.map",
+    "main.css": "/moovle/static/css/main.6f3174c9.chunk.css",
+    "main.js": "/moovle/static/js/main.7e98e151.chunk.js",
+    "main.js.map": "/moovle/static/js/main.7e98e151.chunk.js.map",
     "runtime-main.js": "/moovle/static/js/runtime-main.af529a7e.js",
     "runtime-main.js.map": "/moovle/static/js/runtime-main.af529a7e.js.map",
-    "static/js/2.49dfe02d.chunk.js": "/moovle/static/js/2.49dfe02d.chunk.js",
-    "static/js/2.49dfe02d.chunk.js.map": "/moovle/static/js/2.49dfe02d.chunk.js.map",
+    "static/js/2.20c18a6e.chunk.js": "/moovle/static/js/2.20c18a6e.chunk.js",
+    "static/js/2.20c18a6e.chunk.js.map": "/moovle/static/js/2.20c18a6e.chunk.js.map",
     "index.html": "/moovle/index.html",
-    "static/css/main.bd71a4b8.chunk.css.map": "/moovle/static/css/main.bd71a4b8.chunk.css.map",
-    "static/js/2.49dfe02d.chunk.js.LICENSE.txt": "/moovle/static/js/2.49dfe02d.chunk.js.LICENSE.txt",
-    "static/media/all.min.css": "/moovle/static/media/fa-solid-900.a940d584.woff"
+    "static/css/main.6f3174c9.chunk.css.map": "/moovle/static/css/main.6f3174c9.chunk.css.map",
+    "static/js/2.20c18a6e.chunk.js.LICENSE.txt": "/moovle/static/js/2.20c18a6e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.af529a7e.js",
-    "static/js/2.49dfe02d.chunk.js",
-    "static/css/main.bd71a4b8.chunk.css",
-    "static/js/main.00688929.chunk.js"
+    "static/js/2.20c18a6e.chunk.js",
+    "static/css/main.6f3174c9.chunk.css",
+    "static/js/main.7e98e151.chunk.js"
   ]
 }
