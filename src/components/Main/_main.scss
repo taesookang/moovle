@@ -1,0 +1,27 @@
+.main {
+    width: 100vw;
+    height: calc(100vh - #{$header-height});
+    padding-top: $header-height;
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        width: 70%;
+        max-width: 54rem;
+        padding-top: 2rem;
+
+        @include mobile {
+            width: 100%;
+            min-width: 320px;
+        }
+
+        .query-result {
+            letter-spacing: 0.1rem;
+            font-weight: 400;
+        
+            span {
+                color: $primary;
+            }
+        }
+    }
+}

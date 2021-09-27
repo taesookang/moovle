@@ -1,16 +1,29 @@
-$text-link: #2997ff;
-$text-color: #e9e9e9;
-$text-light: #b9b9b9;
-$text-lighter: #8a8a8a;
+// body background color
+$bg-body: #141414;
 
+// theme colors
 $primary: #f1a93b;
-$secondary: #3a3a3a;
+$red: #E53935;
+$text: #e9e9e9;
+$text-light: darken($text, 20%);
+$text-lighter: darken($text, 40%);
 
-$background: #141414;
+// spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
 
+// borders
+$base-border-thickness: 1px;
+$base-border-radius: 5px;
+$border-radius-rounded: 50%;
 
-@mixin va {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+// box-shadow
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+
+// font-size
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-md: $base-font-size * 1.25;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;

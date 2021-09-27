@@ -1,0 +1,52 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin ellipsis($line) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+// media queries
+$breakpoints: (
+    "mobile": 480px,
+    "tablet-sm": 720px,
+    "tablet-lg": 960px,
+    "desktop": 1200px,
+);
+
+
+@mixin mobile {
+    @media (max-width: map-get($breakpoints, "mobile")) {
+        @content;
+    }
+}
+
+@mixin tablet-sm {
+    @media (max-width: map-get($breakpoints, "tablet-sm")) {
+        @content;
+    }
+}
+
+@mixin tablet-lg {
+    @media (max-width: map-get($breakpoints, "tablet-lg")) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width: map-get($breakpoints, "desktop")) {
+        @content;
+    }
+}
+
+@mixin breakpoint($bp: 0) {
+    @media (max-width: $bp) {
+        @content;
+    }
+}

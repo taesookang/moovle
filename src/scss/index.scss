@@ -1,0 +1,16 @@
+// variables & mixins
+@import 'variables';
+@import 'mixins';
+
+// base
+@import 'base';
+
+// components
+@import '../components/Header/header';
+@import '../components/Main/main';
+@import '../components/Main/Genres/genres';
+@import '../components/Main/Movielist/movielist';
+@import '../components/shared/MovieCard/moviecard';
+@import '../components/shared/MovieCard/Modal/modal';
+@import '../components/Main/Movielist/NoResult/noresult';
+@import '../components/Watchlist/_watchlist';

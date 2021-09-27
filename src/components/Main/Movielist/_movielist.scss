@@ -1,0 +1,13 @@
+.movielist {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 160px);
+    gap: 1rem;
+    justify-content: center;
+    margin-top: $base-margin * 2;
+
+    @include mobile {
+        margin-top: $base-margin;
+        grid-template-columns: repeat(2, 140px);
+    }
+}
