@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/moovle/static/css/main.6f3174c9.chunk.css",
-    "main.js": "/moovle/static/js/main.7e98e151.chunk.js",
-    "main.js.map": "/moovle/static/js/main.7e98e151.chunk.js.map",
+    "main.js": "/moovle/static/js/main.e132935a.chunk.js",
+    "main.js.map": "/moovle/static/js/main.e132935a.chunk.js.map",
     "runtime-main.js": "/moovle/static/js/runtime-main.af529a7e.js",
     "runtime-main.js.map": "/moovle/static/js/runtime-main.af529a7e.js.map",
     "static/js/2.20c18a6e.chunk.js": "/moovle/static/js/2.20c18a6e.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.af529a7e.js",
     "static/js/2.20c18a6e.chunk.js",
     "static/css/main.6f3174c9.chunk.css",
-    "static/js/main.7e98e151.chunk.js"
+    "static/js/main.e132935a.chunk.js"
   ]
 }
