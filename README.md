@@ -1,66 +1,21 @@
-# Moovle 
+# Moovle
+This is my first project with React JS utilizing third party API ([TMDB API](https://www.themoviedb.org/?language=en-US)), which is an user-friendly web application that offers watchlist service and movie search by categories and query with detailed information and a short trailer for each result.
 
-Check out on website :point_right: [Moovle](https://taesookang.github.io/moovle/)
+## Demo
 
+[![Go to Live](https://firebasestorage.googleapis.com/v0/b/instagrid-beafb.appspot.com/o/btn-link.svg?alt=media&token=2b3c5b08-9f84-4975-a3cc-150ce45c7f26)](https://taesookang.github.io/moovle/)
 
-## Project objective
+![alt text](demo.gif)
 
-:white_check_mark: To build a user-friendly web application which provides movie search and managing watchlist services.
-
-## Features
-| Features | Descriptions | Screenshot |
-|--|--|--|
-|Movie list| Quick view of movie lists by Now playing, Top rated, and Popular |<img width="600" alt="moovle-home" src="https://user-images.githubusercontent.com/75271289/108682785-bd17e480-74be-11eb-96e1-6e7d5958effe.png">|
-|Search movies| Search for a movie by typing its title |<img width="600" alt="moovle-search" src="https://user-images.githubusercontent.com/75271289/108683614-d705f700-74bf-11eb-953b-be1c7381e001.png">|
-|Search by genres| Movie search by choosing specific genre.  |<img width="600" alt="moovle-bygenre" src="https://user-images.githubusercontent.com/75271289/108684935-82fc1200-74c1-11eb-8be1-bb96d54532b6.png">|
-|Movie details| Movie details contains movie trailer video, release date information, ratings, synopsis, and control buttons for adding to watchlist or to watched list |<img width="600" alt="moovle-modal" src="https://user-images.githubusercontent.com/75271289/108685248-eb4af380-74c1-11eb-8fc0-e42e79bd718e.png">|
-|Responsive screen| Mobile and tablet viewports are available as well as desktop version. |![moovle-responsive](https://user-images.githubusercontent.com/75271289/108686909-0d457580-74c4-11eb-920b-19a80c206fe8.png)|
-
-## Built with
-
+## Stacks
 - React JS
-  - React hooks 
-  - React router dom
-  - Context API
-  - React infinite scroller component
-  - React player
--  Axios (for fetching data)
-- [TMDB](https://developers.themoviedb.org/3/) API 
-- Font Awesome (for icons)
-- SCSS (for styling)
-## Features
-**Movie list:**  
+- TMDB API
+- SCSS
 
-<img width="600" alt="moovle-home" src="https://user-images.githubusercontent.com/75271289/108682785-bd17e480-74be-11eb-96e1-6e7d5958effe.png">  
+## What I learned from this project
 
-Quick view of movie lists by Now playing, Top rated, and Popular.
-
----
-**Search movies:**
-
-<img width="600" alt="moovle-search" src="https://user-images.githubusercontent.com/75271289/108683614-d705f700-74bf-11eb-953b-be1c7381e001.png">  
-
-Search for a movie by title.
-
----
-Search by genres:
-
-<img width="600" alt="moovle-bygenre" src="https://user-images.githubusercontent.com/75271289/108684935-82fc1200-74c1-11eb-8be1-bb96d54532b6.png"> 
-
-View listd of movies by genres.
-
----
-
-**Movie details:**
-
-<img width="600" alt="moovle-modal" src="https://user-images.githubusercontent.com/75271289/108685248-eb4af380-74c1-11eb-8fc0-e42e79bd718e.png">
-
-Movie details contains movie trailer, release date, ratings, synopsis, and control buttons for adding to watchlist or to watched list.
-
----
-
-**Responsive screen:**
-
-![moovle-responsive](https://user-images.githubusercontent.com/75271289/108686909-0d457580-74c4-11eb-920b-19a80c206fe8.png)
-
-Mobile and tablet viewports are available as well as desktop version.
+- React built-in APIs (Hooks & Context).
+- SCSS (mixins & ampersand).
+- How to use **Axios** data fetching tools
+- How to use **local storage** in React App.
+- How to deploy react app on **Github Pages**.
